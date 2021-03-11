@@ -1,20 +1,23 @@
 {
-  "name": "query-to-regexp",
-  "version": "1.0.0",
   "private": true,
+  "name": "query-to-regexp",
   "description": "",
-  "keywords": [
-
-  ],
-  "main": "index.js",
-  "author": "",
   "license": "UNLICENSED",
+  "author": "",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "npm-run-all -p format:** -s prettier:format",
+    "format:package-json": "prettier-package-json --write",
+    "lint": "run-p lint:** prettier:lint",
+    "lint:package-json": "prettier-package-json -l",
+    "prettier:format": "npm run prettier:lint -- --write",
+    "prettier:lint": "prettier . --check"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "prettier-package-json": "^2.1.3"
-  }
+  },
+  "keywords": []
 }
