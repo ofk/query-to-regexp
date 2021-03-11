@@ -21,5 +21,14 @@
     "prettier": "^2.2.1",
     "prettier-package-json": "^2.1.3"
   },
-  "keywords": []
+  "keywords": [],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "package.json": "prettier-package-json --write",
+    "*.{md,json,html}": "prettier --write"
+  }
 }
