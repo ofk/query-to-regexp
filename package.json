@@ -13,8 +13,14 @@
     "url": "https://github.com/ofk/query-to-regexp/issues"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.build.json",
     "format": "npm-run-all -p format:** -s prettier:format",
     "format:package-json": "prettier-package-json --write",
     "format:scripts": "npm run lint:scripts -- --fix",
@@ -26,6 +32,7 @@
     "prettier:format": "npm run prettier:lint -- --write",
     "prettier:lint": "prettier . --check"
   },
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@ofk/eslint-config-recommend": "^2.1.0",
     "@types/jest": "^26.0.20",
