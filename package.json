@@ -1,8 +1,7 @@
 {
-  "private": true,
   "name": "query-to-regexp",
   "description": "Convert the user-input string to regexp",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "ofk <ofkjpn+npm@gmail.com> (https://github.com/ofk/)",
   "homepage": "https://github.com/ofk/query-to-regexp#readme",
   "repository": {
