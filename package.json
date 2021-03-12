@@ -1,9 +1,17 @@
 {
   "private": true,
   "name": "query-to-regexp",
-  "description": "",
+  "description": "Convert the user-input string to regexp",
   "license": "UNLICENSED",
-  "author": "",
+  "author": "ofk <ofkjpn+npm@gmail.com> (https://github.com/ofk/)",
+  "homepage": "https://github.com/ofk/query-to-regexp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ofk/query-to-regexp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ofk/query-to-regexp/issues"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
